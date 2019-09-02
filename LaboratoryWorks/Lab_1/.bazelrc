@@ -1,1 +1,1 @@
-build --copt='/std:c++11'  --output_filter=DONT_MATCH_ANYTHING
+build --output_filter=DONT_MATCH_ANYTHING
