@@ -1,3 +1,3 @@
-C:/Users/Alehandro/CLionProjects/TernaryNumeralSystem/cmake-build-debug/CMakeFiles/TernaryNumeralSystem.dir
-C:/Users/Alehandro/CLionProjects/TernaryNumeralSystem/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Alehandro/CLionProjects/TernaryNumeralSystem/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/TernaryNumeralSystem.dir
+C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/rebuild_cache.dir

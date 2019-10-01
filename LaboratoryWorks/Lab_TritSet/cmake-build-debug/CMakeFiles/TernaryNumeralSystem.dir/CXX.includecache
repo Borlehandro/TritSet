@@ -6,17 +6,9 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Alehandro/CLionProjects/TernaryNumeralSystem/Trit.h
+C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/Trit.h
 
-C:/Users/Alehandro/CLionProjects/TernaryNumeralSystem/TritSet.cpp
-iostream
--
-cmath
--
-TritSet.h
-C:/Users/Alehandro/CLionProjects/TernaryNumeralSystem/TritSet.h
-
-C:/Users/Alehandro/CLionProjects/TernaryNumeralSystem/TritSet.h
+C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/TritSet.h
 cstdlib
 -
 functional
@@ -24,5 +16,15 @@ functional
 unordered_map
 -
 Trit.h
-C:/Users/Alehandro/CLionProjects/TernaryNumeralSystem/Trit.h
+C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/Trit.h
+
+C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/main.cpp
+iostream
+-
+vector
+-
+cassert
+-
+TritSet.h
+C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/TritSet.h
 

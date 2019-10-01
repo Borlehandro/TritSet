@@ -21,16 +21,13 @@ public:
             operator Trit() const;
             Proxy &operator=(Trit newValue);
 
-            //TEST METHOD
-            unsigned int getArrayValue();
-
         private:
             unsigned int proxyIndex;
             Trit value;
             TritSet *setPtr;
     };
 
-    explicit TritSet(const unsigned int &size);
+    explicit TritSet(size_t size);
 
     // length of internal array
     unsigned int capacity();
@@ -72,7 +69,6 @@ private:
 
     static void fixSizes(TritSet &a, TritSet &b);
     void resize(size_t newSize);
-    static unsigned int roundUp(unsigned int dividend, unsigned int module);
 
 };
 

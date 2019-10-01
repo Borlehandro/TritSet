@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.1.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Alehandro\CLionProjects\TernaryNumeralSystem
+CMAKE_SOURCE_DIR = C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Alehandro\CLionProjects\TernaryNumeralSystem\cmake-build-debug
+CMAKE_BINARY_DIR = C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/TernaryNumeralSystem.dir/depend.make
@@ -58,42 +58,42 @@ include CMakeFiles/TernaryNumeralSystem.dir/flags.make
 
 CMakeFiles/TernaryNumeralSystem.dir/main.cpp.obj: CMakeFiles/TernaryNumeralSystem.dir/flags.make
 CMakeFiles/TernaryNumeralSystem.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alehandro\CLionProjects\TernaryNumeralSystem\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TernaryNumeralSystem.dir/main.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TernaryNumeralSystem.dir\main.cpp.obj -c C:\Users\Alehandro\CLionProjects\TernaryNumeralSystem\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TernaryNumeralSystem.dir/main.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TernaryNumeralSystem.dir\main.cpp.obj -c C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\main.cpp
 
 CMakeFiles/TernaryNumeralSystem.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TernaryNumeralSystem.dir/main.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Alehandro\CLionProjects\TernaryNumeralSystem\main.cpp > CMakeFiles\TernaryNumeralSystem.dir\main.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\main.cpp > CMakeFiles\TernaryNumeralSystem.dir\main.cpp.i
 
 CMakeFiles/TernaryNumeralSystem.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TernaryNumeralSystem.dir/main.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Alehandro\CLionProjects\TernaryNumeralSystem\main.cpp -o CMakeFiles\TernaryNumeralSystem.dir\main.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\main.cpp -o CMakeFiles\TernaryNumeralSystem.dir\main.cpp.s
 
 CMakeFiles/TernaryNumeralSystem.dir/TritSet.cpp.obj: CMakeFiles/TernaryNumeralSystem.dir/flags.make
 CMakeFiles/TernaryNumeralSystem.dir/TritSet.cpp.obj: ../TritSet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alehandro\CLionProjects\TernaryNumeralSystem\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TernaryNumeralSystem.dir/TritSet.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TernaryNumeralSystem.dir\TritSet.cpp.obj -c C:\Users\Alehandro\CLionProjects\TernaryNumeralSystem\TritSet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TernaryNumeralSystem.dir/TritSet.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TernaryNumeralSystem.dir\TritSet.cpp.obj -c C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\TritSet.cpp
 
 CMakeFiles/TernaryNumeralSystem.dir/TritSet.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TernaryNumeralSystem.dir/TritSet.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Alehandro\CLionProjects\TernaryNumeralSystem\TritSet.cpp > CMakeFiles\TernaryNumeralSystem.dir\TritSet.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\TritSet.cpp > CMakeFiles\TernaryNumeralSystem.dir\TritSet.cpp.i
 
 CMakeFiles/TernaryNumeralSystem.dir/TritSet.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TernaryNumeralSystem.dir/TritSet.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Alehandro\CLionProjects\TernaryNumeralSystem\TritSet.cpp -o CMakeFiles\TernaryNumeralSystem.dir\TritSet.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\TritSet.cpp -o CMakeFiles\TernaryNumeralSystem.dir\TritSet.cpp.s
 
 CMakeFiles/TernaryNumeralSystem.dir/Trit.cpp.obj: CMakeFiles/TernaryNumeralSystem.dir/flags.make
 CMakeFiles/TernaryNumeralSystem.dir/Trit.cpp.obj: ../Trit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alehandro\CLionProjects\TernaryNumeralSystem\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TernaryNumeralSystem.dir/Trit.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TernaryNumeralSystem.dir\Trit.cpp.obj -c C:\Users\Alehandro\CLionProjects\TernaryNumeralSystem\Trit.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TernaryNumeralSystem.dir/Trit.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TernaryNumeralSystem.dir\Trit.cpp.obj -c C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\Trit.cpp
 
 CMakeFiles/TernaryNumeralSystem.dir/Trit.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TernaryNumeralSystem.dir/Trit.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Alehandro\CLionProjects\TernaryNumeralSystem\Trit.cpp > CMakeFiles\TernaryNumeralSystem.dir\Trit.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\Trit.cpp > CMakeFiles\TernaryNumeralSystem.dir\Trit.cpp.i
 
 CMakeFiles/TernaryNumeralSystem.dir/Trit.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TernaryNumeralSystem.dir/Trit.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Alehandro\CLionProjects\TernaryNumeralSystem\Trit.cpp -o CMakeFiles\TernaryNumeralSystem.dir\Trit.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\Trit.cpp -o CMakeFiles\TernaryNumeralSystem.dir\Trit.cpp.s
 
 # Object files for target TernaryNumeralSystem
 TernaryNumeralSystem_OBJECTS = \
@@ -111,7 +111,7 @@ TernaryNumeralSystem.exe: CMakeFiles/TernaryNumeralSystem.dir/build.make
 TernaryNumeralSystem.exe: CMakeFiles/TernaryNumeralSystem.dir/linklibs.rsp
 TernaryNumeralSystem.exe: CMakeFiles/TernaryNumeralSystem.dir/objects1.rsp
 TernaryNumeralSystem.exe: CMakeFiles/TernaryNumeralSystem.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Alehandro\CLionProjects\TernaryNumeralSystem\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable TernaryNumeralSystem.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable TernaryNumeralSystem.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\TernaryNumeralSystem.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -124,6 +124,6 @@ CMakeFiles/TernaryNumeralSystem.dir/clean:
 .PHONY : CMakeFiles/TernaryNumeralSystem.dir/clean
 
 CMakeFiles/TernaryNumeralSystem.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Alehandro\CLionProjects\TernaryNumeralSystem C:\Users\Alehandro\CLionProjects\TernaryNumeralSystem C:\Users\Alehandro\CLionProjects\TernaryNumeralSystem\cmake-build-debug C:\Users\Alehandro\CLionProjects\TernaryNumeralSystem\cmake-build-debug C:\Users\Alehandro\CLionProjects\TernaryNumeralSystem\cmake-build-debug\CMakeFiles\TernaryNumeralSystem.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug\CMakeFiles\TernaryNumeralSystem.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/TernaryNumeralSystem.dir/depend
 

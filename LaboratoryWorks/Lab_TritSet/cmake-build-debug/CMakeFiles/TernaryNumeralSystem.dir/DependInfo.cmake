@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Alehandro/CLionProjects/TernaryNumeralSystem/Trit.cpp" "C:/Users/Alehandro/CLionProjects/TernaryNumeralSystem/cmake-build-debug/CMakeFiles/TernaryNumeralSystem.dir/Trit.cpp.obj"
-  "C:/Users/Alehandro/CLionProjects/TernaryNumeralSystem/TritSet.cpp" "C:/Users/Alehandro/CLionProjects/TernaryNumeralSystem/cmake-build-debug/CMakeFiles/TernaryNumeralSystem.dir/TritSet.cpp.obj"
-  "C:/Users/Alehandro/CLionProjects/TernaryNumeralSystem/main.cpp" "C:/Users/Alehandro/CLionProjects/TernaryNumeralSystem/cmake-build-debug/CMakeFiles/TernaryNumeralSystem.dir/main.cpp.obj"
+  "C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/Trit.cpp" "C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/TernaryNumeralSystem.dir/Trit.cpp.obj"
+  "C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/TritSet.cpp" "C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/TernaryNumeralSystem.dir/TritSet.cpp.obj"
+  "C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/main.cpp" "C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/TernaryNumeralSystem.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
