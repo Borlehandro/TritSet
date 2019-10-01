@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Alehandro/CLionProjects/TernaryNumeralSystem/Trit.h
+
+C:/Users/Alehandro/CLionProjects/TernaryNumeralSystem/TritSet.cpp
+iostream
+-
+cmath
+-
+TritSet.h
+C:/Users/Alehandro/CLionProjects/TernaryNumeralSystem/TritSet.h
+
+C:/Users/Alehandro/CLionProjects/TernaryNumeralSystem/TritSet.h
+cstdlib
+-
+functional
+-
+unordered_map
+-
+Trit.h
+C:/Users/Alehandro/CLionProjects/TernaryNumeralSystem/Trit.h
+
