@@ -207,7 +207,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=myProject
+CMAKE_PROJECT_NAME:STATIC=Lab_TritSet
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=
@@ -307,6 +307,12 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //Enable installation of googletest. (Projects embedding googletest
 // may want to turn this OFF.)
 INSTALL_GTEST:BOOL=ON
+
+//Value Computed by CMake
+Lab_TritSet_BINARY_DIR:STATIC=C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug
+
+//Value Computed by CMake
+Lab_TritSet_SOURCE_DIR:STATIC=C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet
 
 //Path to a program.
 PYTHON_EXECUTABLE:FILEPATH=C:/Users/Alehandro/AppData/Local/Programs/Python/Python37-32/python.exe

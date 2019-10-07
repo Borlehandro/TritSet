@@ -8,8 +8,6 @@
 
 using namespace std;
 
-// TODO USE MASK IN ALL BITS OPERATIONS
-
 TritSet::Proxy::operator Trit() const {
     return this->value;
 }
@@ -149,8 +147,6 @@ std::unordered_map<Trit, int> TritSet::cardinality() {
 }
 
 void TritSet::trim(size_t lastIndex) {
-
-    // TODO REPLACE POW WITH MASK
 
     this->set[lastIndex/16] = (this->set[lastIndex/16])
             & (((unsigned int)pow(2, (lastIndex*2))-1) << (sizeof(unsigned int)*8-lastIndex*2));

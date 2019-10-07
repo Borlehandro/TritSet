@@ -22,18 +22,18 @@ public:
             Proxy &operator=(Trit newValue);
 
         private:
-            unsigned int proxyIndex;
+            size_t proxyIndex;
             Trit value;
             TritSet *setPtr;
     };
 
     explicit TritSet(size_t size);
 
-    // length of internal array
+    /// length of internal array
     unsigned int capacity();
 
-    //освобождение памяти до начального значения или
-    //до значения необходимого для хранения последнего установленного трита
+    /// освобождение памяти до начального значения или
+    /// до значения необходимого для хранения последнего установленного трита
     void shrink();
 
     TritSet operator & (TritSet setA);
@@ -44,18 +44,18 @@ public:
 
     Proxy operator[](size_t index);
 
-    //число установленных в данное значение тритов
-    //для трита Unknown - число значений Unknown до последнего установленного трита
+    /// число установленных в данное значение тритов
+    /// для трита Unknown - число значений Unknown до последнего установленного трита
     size_t cardinality(Trit value);
 
-    //аналогично но сразу для всех типов тритов
+    /// аналогично но сразу для всех типов тритов
     // TODO USE std::hash<int>
     std::unordered_map<Trit, int> cardinality();
 
-    // забыть содержимое от lastIndex и дальше
+    /// забыть содержимое от lastIndex и дальше
     void trim(size_t lastIndex);
 
-    // logical length - индекс последнего не Unknown трита +1
+    /// индекс последнего не Unknown трита +1
     size_t length();
 
 private:

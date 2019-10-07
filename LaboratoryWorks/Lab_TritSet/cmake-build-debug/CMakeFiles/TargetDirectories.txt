@@ -1,11 +1,11 @@
 C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/list_install_components.dir
 C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/runAllTests.dir
+C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/Lab_TritSet.dir
+C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/test.dir
 C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/install.dir
 C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/install/local.dir
 C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/myProject.dir
-C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/test.dir
 C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/install/strip.dir
 C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/gtests/CMakeFiles/rebuild_cache.dir
 C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/gtests/CMakeFiles/test.dir

@@ -65,6 +65,28 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	"C:\Program Files\JetBrains\CLion 2019.1.1\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	"C:\Program Files\JetBrains\CLion 2019.1.1\bin\cmake\win\bin\ctest.exe" --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -99,28 +121,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2019.1.1\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	"C:\Program Files\JetBrains\CLion 2019.1.1\bin\cmake\win\bin\ctest.exe" --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -180,17 +180,17 @@ runAllTests/fast:
 .PHONY : runAllTests/fast
 
 #=============================================================================
-# Target rules for targets named myProject
+# Target rules for targets named Lab_TritSet
 
 # Build rule for target.
-myProject: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 myProject
-.PHONY : myProject
+Lab_TritSet: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Lab_TritSet
+.PHONY : Lab_TritSet
 
 # fast build rule for target.
-myProject/fast:
-	$(MAKE) -f CMakeFiles\myProject.dir\build.make CMakeFiles/myProject.dir/build
-.PHONY : myProject/fast
+Lab_TritSet/fast:
+	$(MAKE) -f CMakeFiles\Lab_TritSet.dir\build.make CMakeFiles/Lab_TritSet.dir/build
+.PHONY : Lab_TritSet/fast
 
 #=============================================================================
 # Target rules for targets named gmock_main
@@ -250,7 +250,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) -f CMakeFiles\myProject.dir\build.make CMakeFiles/myProject.dir/main.cpp.obj
+	$(MAKE) -f CMakeFiles\Lab_TritSet.dir\build.make CMakeFiles/Lab_TritSet.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -259,7 +259,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles\myProject.dir\build.make CMakeFiles/myProject.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles\Lab_TritSet.dir\build.make CMakeFiles/Lab_TritSet.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -268,7 +268,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles\myProject.dir\build.make CMakeFiles/myProject.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles\Lab_TritSet.dir\build.make CMakeFiles/Lab_TritSet.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 src/Trit.obj: src/Trit.cpp.obj
@@ -278,7 +278,7 @@ src/Trit.obj: src/Trit.cpp.obj
 # target to build an object file
 src/Trit.cpp.obj:
 	$(MAKE) -f CMakeFiles\runAllTests.dir\build.make CMakeFiles/runAllTests.dir/src/Trit.cpp.obj
-	$(MAKE) -f CMakeFiles\myProject.dir\build.make CMakeFiles/myProject.dir/src/Trit.cpp.obj
+	$(MAKE) -f CMakeFiles\Lab_TritSet.dir\build.make CMakeFiles/Lab_TritSet.dir/src/Trit.cpp.obj
 .PHONY : src/Trit.cpp.obj
 
 src/Trit.i: src/Trit.cpp.i
@@ -288,7 +288,7 @@ src/Trit.i: src/Trit.cpp.i
 # target to preprocess a source file
 src/Trit.cpp.i:
 	$(MAKE) -f CMakeFiles\runAllTests.dir\build.make CMakeFiles/runAllTests.dir/src/Trit.cpp.i
-	$(MAKE) -f CMakeFiles\myProject.dir\build.make CMakeFiles/myProject.dir/src/Trit.cpp.i
+	$(MAKE) -f CMakeFiles\Lab_TritSet.dir\build.make CMakeFiles/Lab_TritSet.dir/src/Trit.cpp.i
 .PHONY : src/Trit.cpp.i
 
 src/Trit.s: src/Trit.cpp.s
@@ -298,7 +298,7 @@ src/Trit.s: src/Trit.cpp.s
 # target to generate assembly for a file
 src/Trit.cpp.s:
 	$(MAKE) -f CMakeFiles\runAllTests.dir\build.make CMakeFiles/runAllTests.dir/src/Trit.cpp.s
-	$(MAKE) -f CMakeFiles\myProject.dir\build.make CMakeFiles/myProject.dir/src/Trit.cpp.s
+	$(MAKE) -f CMakeFiles\Lab_TritSet.dir\build.make CMakeFiles/Lab_TritSet.dir/src/Trit.cpp.s
 .PHONY : src/Trit.cpp.s
 
 src/TritSet.obj: src/TritSet.cpp.obj
@@ -308,7 +308,7 @@ src/TritSet.obj: src/TritSet.cpp.obj
 # target to build an object file
 src/TritSet.cpp.obj:
 	$(MAKE) -f CMakeFiles\runAllTests.dir\build.make CMakeFiles/runAllTests.dir/src/TritSet.cpp.obj
-	$(MAKE) -f CMakeFiles\myProject.dir\build.make CMakeFiles/myProject.dir/src/TritSet.cpp.obj
+	$(MAKE) -f CMakeFiles\Lab_TritSet.dir\build.make CMakeFiles/Lab_TritSet.dir/src/TritSet.cpp.obj
 .PHONY : src/TritSet.cpp.obj
 
 src/TritSet.i: src/TritSet.cpp.i
@@ -318,7 +318,7 @@ src/TritSet.i: src/TritSet.cpp.i
 # target to preprocess a source file
 src/TritSet.cpp.i:
 	$(MAKE) -f CMakeFiles\runAllTests.dir\build.make CMakeFiles/runAllTests.dir/src/TritSet.cpp.i
-	$(MAKE) -f CMakeFiles\myProject.dir\build.make CMakeFiles/myProject.dir/src/TritSet.cpp.i
+	$(MAKE) -f CMakeFiles\Lab_TritSet.dir\build.make CMakeFiles/Lab_TritSet.dir/src/TritSet.cpp.i
 .PHONY : src/TritSet.cpp.i
 
 src/TritSet.s: src/TritSet.cpp.s
@@ -328,7 +328,7 @@ src/TritSet.s: src/TritSet.cpp.s
 # target to generate assembly for a file
 src/TritSet.cpp.s:
 	$(MAKE) -f CMakeFiles\runAllTests.dir\build.make CMakeFiles/runAllTests.dir/src/TritSet.cpp.s
-	$(MAKE) -f CMakeFiles\myProject.dir\build.make CMakeFiles/myProject.dir/src/TritSet.cpp.s
+	$(MAKE) -f CMakeFiles\Lab_TritSet.dir\build.make CMakeFiles/Lab_TritSet.dir/src/TritSet.cpp.s
 .PHONY : src/TritSet.cpp.s
 
 tests.obj: tests.cpp.obj
@@ -358,32 +358,32 @@ tests.cpp.s:
 	$(MAKE) -f CMakeFiles\runAllTests.dir\build.make CMakeFiles/runAllTests.dir/tests.cpp.s
 .PHONY : tests.cpp.s
 
-tests/testTest.obj: tests/testTest.cpp.obj
+tests/tritSetTests.obj: tests/tritSetTests.cpp.obj
 
-.PHONY : tests/testTest.obj
+.PHONY : tests/tritSetTests.obj
 
 # target to build an object file
-tests/testTest.cpp.obj:
-	$(MAKE) -f CMakeFiles\runAllTests.dir\build.make CMakeFiles/runAllTests.dir/tests/testTest.cpp.obj
-.PHONY : tests/testTest.cpp.obj
+tests/tritSetTests.cpp.obj:
+	$(MAKE) -f CMakeFiles\runAllTests.dir\build.make CMakeFiles/runAllTests.dir/tests/tritSetTests.cpp.obj
+.PHONY : tests/tritSetTests.cpp.obj
 
-tests/testTest.i: tests/testTest.cpp.i
+tests/tritSetTests.i: tests/tritSetTests.cpp.i
 
-.PHONY : tests/testTest.i
+.PHONY : tests/tritSetTests.i
 
 # target to preprocess a source file
-tests/testTest.cpp.i:
-	$(MAKE) -f CMakeFiles\runAllTests.dir\build.make CMakeFiles/runAllTests.dir/tests/testTest.cpp.i
-.PHONY : tests/testTest.cpp.i
+tests/tritSetTests.cpp.i:
+	$(MAKE) -f CMakeFiles\runAllTests.dir\build.make CMakeFiles/runAllTests.dir/tests/tritSetTests.cpp.i
+.PHONY : tests/tritSetTests.cpp.i
 
-tests/testTest.s: tests/testTest.cpp.s
+tests/tritSetTests.s: tests/tritSetTests.cpp.s
 
-.PHONY : tests/testTest.s
+.PHONY : tests/tritSetTests.s
 
 # target to generate assembly for a file
-tests/testTest.cpp.s:
-	$(MAKE) -f CMakeFiles\runAllTests.dir\build.make CMakeFiles/runAllTests.dir/tests/testTest.cpp.s
-.PHONY : tests/testTest.cpp.s
+tests/tritSetTests.cpp.s:
+	$(MAKE) -f CMakeFiles\runAllTests.dir\build.make CMakeFiles/runAllTests.dir/tests/tritSetTests.cpp.s
+.PHONY : tests/tritSetTests.cpp.s
 
 # Help Target
 help:
@@ -393,12 +393,12 @@ help:
 	@echo ... depend
 	@echo ... list_install_components
 	@echo ... runAllTests
+	@echo ... Lab_TritSet
+	@echo ... rebuild_cache
+	@echo ... test
 	@echo ... install
 	@echo ... install/local
 	@echo ... edit_cache
-	@echo ... myProject
-	@echo ... rebuild_cache
-	@echo ... test
 	@echo ... install/strip
 	@echo ... gmock_main
 	@echo ... gmock
@@ -416,9 +416,9 @@ help:
 	@echo ... tests.obj
 	@echo ... tests.i
 	@echo ... tests.s
-	@echo ... tests/testTest.obj
-	@echo ... tests/testTest.i
-	@echo ... tests/testTest.s
+	@echo ... tests/tritSetTests.obj
+	@echo ... tests/tritSetTests.i
+	@echo ... tests/tritSetTests.s
 .PHONY : help
 
 
