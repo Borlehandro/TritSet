@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/TernaryNumeralSystem.dir/main.cpp.obj"
-  "CMakeFiles/TernaryNumeralSystem.dir/TritSet.cpp.obj"
-  "CMakeFiles/TernaryNumeralSystem.dir/Trit.cpp.obj"
+  "CMakeFiles/TernaryNumeralSystem.dir/src/TritSet.cpp.obj"
+  "CMakeFiles/TernaryNumeralSystem.dir/src/Trit.cpp.obj"
+  "CMakeFiles/TernaryNumeralSystem.dir/tests.cpp.obj"
   "TernaryNumeralSystem.pdb"
   "TernaryNumeralSystem.exe"
   "TernaryNumeralSystem.exe.manifest"

@@ -80,19 +80,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/Trit.cpp">
-			<Option target="TernaryNumeralSystem"/>
-		</Unit>
-		<Unit filename="C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/Trit.h">
-			<Option target="TernaryNumeralSystem"/>
-		</Unit>
-		<Unit filename="C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/TritSet.cpp">
-			<Option target="TernaryNumeralSystem"/>
-		</Unit>
-		<Unit filename="C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/TritSet.h">
-			<Option target="TernaryNumeralSystem"/>
-		</Unit>
 		<Unit filename="C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/main.cpp">
+			<Option target="TernaryNumeralSystem"/>
+		</Unit>
+		<Unit filename="C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/src/Trit.cpp">
+			<Option target="TernaryNumeralSystem"/>
+		</Unit>
+		<Unit filename="C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/src/Trit.h">
+			<Option target="TernaryNumeralSystem"/>
+		</Unit>
+		<Unit filename="C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/src/TritSet.cpp">
+			<Option target="TernaryNumeralSystem"/>
+		</Unit>
+		<Unit filename="C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/src/TritSet.h">
+			<Option target="TernaryNumeralSystem"/>
+		</Unit>
+		<Unit filename="C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/tests.cpp">
 			<Option target="TernaryNumeralSystem"/>
 		</Unit>
 		<Unit filename="C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/CMakeLists.txt">

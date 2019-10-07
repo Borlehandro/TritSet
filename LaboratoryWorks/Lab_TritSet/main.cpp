@@ -2,7 +2,7 @@
 #include <vector>
 #include <cassert>
 
-#include "TritSet.h"
+#include "src/TritSet.h"
 
 using namespace std;
 
@@ -65,6 +65,8 @@ int main()
 
     set.shrink();
     assert(allocLength > set.capacity());
+
+    cout << "YES!" << "\n";
 
     return 0;
 }

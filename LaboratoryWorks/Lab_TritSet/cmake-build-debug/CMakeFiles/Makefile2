@@ -64,39 +64,286 @@ CMAKE_SOURCE_DIR = C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet
 CMAKE_BINARY_DIR = C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/TernaryNumeralSystem.dir
+# Target rules for target CMakeFiles/runAllTests.dir
 
 # All Build rule for target.
-CMakeFiles/TernaryNumeralSystem.dir/all:
-	$(MAKE) -f CMakeFiles\TernaryNumeralSystem.dir\build.make CMakeFiles/TernaryNumeralSystem.dir/depend
-	$(MAKE) -f CMakeFiles\TernaryNumeralSystem.dir\build.make CMakeFiles/TernaryNumeralSystem.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target TernaryNumeralSystem"
-.PHONY : CMakeFiles/TernaryNumeralSystem.dir/all
+CMakeFiles/runAllTests.dir/all: gtests/googletest/CMakeFiles/gtest_main.dir/all
+CMakeFiles/runAllTests.dir/all: gtests/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f CMakeFiles\runAllTests.dir\build.make CMakeFiles/runAllTests.dir/depend
+	$(MAKE) -f CMakeFiles\runAllTests.dir\build.make CMakeFiles/runAllTests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug\CMakeFiles --progress-num=13,14,15,16,17 "Built target runAllTests"
+.PHONY : CMakeFiles/runAllTests.dir/all
 
 # Include target in all.
-all: CMakeFiles/TernaryNumeralSystem.dir/all
+all: CMakeFiles/runAllTests.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/TernaryNumeralSystem.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug\CMakeFiles 4
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/TernaryNumeralSystem.dir/all
+CMakeFiles/runAllTests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug\CMakeFiles 9
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/runAllTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/TernaryNumeralSystem.dir/rule
+.PHONY : CMakeFiles/runAllTests.dir/rule
 
 # Convenience name for target.
-TernaryNumeralSystem: CMakeFiles/TernaryNumeralSystem.dir/rule
+runAllTests: CMakeFiles/runAllTests.dir/rule
 
-.PHONY : TernaryNumeralSystem
-
-# clean rule for target.
-CMakeFiles/TernaryNumeralSystem.dir/clean:
-	$(MAKE) -f CMakeFiles\TernaryNumeralSystem.dir\build.make CMakeFiles/TernaryNumeralSystem.dir/clean
-.PHONY : CMakeFiles/TernaryNumeralSystem.dir/clean
+.PHONY : runAllTests
 
 # clean rule for target.
-clean: CMakeFiles/TernaryNumeralSystem.dir/clean
+CMakeFiles/runAllTests.dir/clean:
+	$(MAKE) -f CMakeFiles\runAllTests.dir\build.make CMakeFiles/runAllTests.dir/clean
+.PHONY : CMakeFiles/runAllTests.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/runAllTests.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/myProject.dir
+
+# All Build rule for target.
+CMakeFiles/myProject.dir/all:
+	$(MAKE) -f CMakeFiles\myProject.dir\build.make CMakeFiles/myProject.dir/depend
+	$(MAKE) -f CMakeFiles\myProject.dir\build.make CMakeFiles/myProject.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug\CMakeFiles --progress-num=9,10,11,12 "Built target myProject"
+.PHONY : CMakeFiles/myProject.dir/all
+
+# Include target in all.
+all: CMakeFiles/myProject.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/myProject.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug\CMakeFiles 4
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/myProject.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/myProject.dir/rule
+
+# Convenience name for target.
+myProject: CMakeFiles/myProject.dir/rule
+
+.PHONY : myProject
+
+# clean rule for target.
+CMakeFiles/myProject.dir/clean:
+	$(MAKE) -f CMakeFiles\myProject.dir\build.make CMakeFiles/myProject.dir/clean
+.PHONY : CMakeFiles/myProject.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/myProject.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory gtests
+
+# Convenience name for "all" pass in the directory.
+gtests/all: gtests/googlemock/all
+
+.PHONY : gtests/all
+
+# Convenience name for "clean" pass in the directory.
+gtests/clean: gtests/googlemock/clean
+
+.PHONY : gtests/clean
+
+# Convenience name for "preinstall" pass in the directory.
+gtests/preinstall: gtests/googlemock/preinstall
+
+.PHONY : gtests/preinstall
+
+#=============================================================================
+# Directory level rules for directory gtests/googlemock
+
+# Convenience name for "all" pass in the directory.
+gtests/googlemock/all: gtests/googlemock/CMakeFiles/gmock_main.dir/all
+gtests/googlemock/all: gtests/googlemock/CMakeFiles/gmock.dir/all
+gtests/googlemock/all: gtests/googletest/all
+
+.PHONY : gtests/googlemock/all
+
+# Convenience name for "clean" pass in the directory.
+gtests/googlemock/clean: gtests/googlemock/CMakeFiles/gmock_main.dir/clean
+gtests/googlemock/clean: gtests/googlemock/CMakeFiles/gmock.dir/clean
+gtests/googlemock/clean: gtests/googletest/clean
+
+.PHONY : gtests/googlemock/clean
+
+# Convenience name for "preinstall" pass in the directory.
+gtests/googlemock/preinstall: gtests/googletest/preinstall
+
+.PHONY : gtests/googlemock/preinstall
+
+#=============================================================================
+# Target rules for target gtests/googlemock/CMakeFiles/gmock_main.dir
+
+# All Build rule for target.
+gtests/googlemock/CMakeFiles/gmock_main.dir/all: gtests/googlemock/CMakeFiles/gmock.dir/all
+gtests/googlemock/CMakeFiles/gmock_main.dir/all: gtests/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f gtests\googlemock\CMakeFiles\gmock_main.dir\build.make gtests/googlemock/CMakeFiles/gmock_main.dir/depend
+	$(MAKE) -f gtests\googlemock\CMakeFiles\gmock_main.dir\build.make gtests/googlemock/CMakeFiles/gmock_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target gmock_main"
+.PHONY : gtests/googlemock/CMakeFiles/gmock_main.dir/all
+
+# Include target in all.
+all: gtests/googlemock/CMakeFiles/gmock_main.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+gtests/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug\CMakeFiles 6
+	$(MAKE) -f CMakeFiles\Makefile2 gtests/googlemock/CMakeFiles/gmock_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug\CMakeFiles 0
+.PHONY : gtests/googlemock/CMakeFiles/gmock_main.dir/rule
+
+# Convenience name for target.
+gmock_main: gtests/googlemock/CMakeFiles/gmock_main.dir/rule
+
+.PHONY : gmock_main
+
+# clean rule for target.
+gtests/googlemock/CMakeFiles/gmock_main.dir/clean:
+	$(MAKE) -f gtests\googlemock\CMakeFiles\gmock_main.dir\build.make gtests/googlemock/CMakeFiles/gmock_main.dir/clean
+.PHONY : gtests/googlemock/CMakeFiles/gmock_main.dir/clean
+
+# clean rule for target.
+clean: gtests/googlemock/CMakeFiles/gmock_main.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target gtests/googlemock/CMakeFiles/gmock.dir
+
+# All Build rule for target.
+gtests/googlemock/CMakeFiles/gmock.dir/all: gtests/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f gtests\googlemock\CMakeFiles\gmock.dir\build.make gtests/googlemock/CMakeFiles/gmock.dir/depend
+	$(MAKE) -f gtests\googlemock\CMakeFiles\gmock.dir\build.make gtests/googlemock/CMakeFiles/gmock.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target gmock"
+.PHONY : gtests/googlemock/CMakeFiles/gmock.dir/all
+
+# Include target in all.
+all: gtests/googlemock/CMakeFiles/gmock.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+gtests/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug\CMakeFiles 4
+	$(MAKE) -f CMakeFiles\Makefile2 gtests/googlemock/CMakeFiles/gmock.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug\CMakeFiles 0
+.PHONY : gtests/googlemock/CMakeFiles/gmock.dir/rule
+
+# Convenience name for target.
+gmock: gtests/googlemock/CMakeFiles/gmock.dir/rule
+
+.PHONY : gmock
+
+# clean rule for target.
+gtests/googlemock/CMakeFiles/gmock.dir/clean:
+	$(MAKE) -f gtests\googlemock\CMakeFiles\gmock.dir\build.make gtests/googlemock/CMakeFiles/gmock.dir/clean
+.PHONY : gtests/googlemock/CMakeFiles/gmock.dir/clean
+
+# clean rule for target.
+clean: gtests/googlemock/CMakeFiles/gmock.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory gtests/googletest
+
+# Convenience name for "all" pass in the directory.
+gtests/googletest/all: gtests/googletest/CMakeFiles/gtest.dir/all
+gtests/googletest/all: gtests/googletest/CMakeFiles/gtest_main.dir/all
+
+.PHONY : gtests/googletest/all
+
+# Convenience name for "clean" pass in the directory.
+gtests/googletest/clean: gtests/googletest/CMakeFiles/gtest.dir/clean
+gtests/googletest/clean: gtests/googletest/CMakeFiles/gtest_main.dir/clean
+
+.PHONY : gtests/googletest/clean
+
+# Convenience name for "preinstall" pass in the directory.
+gtests/googletest/preinstall:
+
+.PHONY : gtests/googletest/preinstall
+
+#=============================================================================
+# Target rules for target gtests/googletest/CMakeFiles/gtest.dir
+
+# All Build rule for target.
+gtests/googletest/CMakeFiles/gtest.dir/all:
+	$(MAKE) -f gtests\googletest\CMakeFiles\gtest.dir\build.make gtests/googletest/CMakeFiles/gtest.dir/depend
+	$(MAKE) -f gtests\googletest\CMakeFiles\gtest.dir\build.make gtests/googletest/CMakeFiles/gtest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target gtest"
+.PHONY : gtests/googletest/CMakeFiles/gtest.dir/all
+
+# Include target in all.
+all: gtests/googletest/CMakeFiles/gtest.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+gtests/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 gtests/googletest/CMakeFiles/gtest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug\CMakeFiles 0
+.PHONY : gtests/googletest/CMakeFiles/gtest.dir/rule
+
+# Convenience name for target.
+gtest: gtests/googletest/CMakeFiles/gtest.dir/rule
+
+.PHONY : gtest
+
+# clean rule for target.
+gtests/googletest/CMakeFiles/gtest.dir/clean:
+	$(MAKE) -f gtests\googletest\CMakeFiles\gtest.dir\build.make gtests/googletest/CMakeFiles/gtest.dir/clean
+.PHONY : gtests/googletest/CMakeFiles/gtest.dir/clean
+
+# clean rule for target.
+clean: gtests/googletest/CMakeFiles/gtest.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target gtests/googletest/CMakeFiles/gtest_main.dir
+
+# All Build rule for target.
+gtests/googletest/CMakeFiles/gtest_main.dir/all: gtests/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f gtests\googletest\CMakeFiles\gtest_main.dir\build.make gtests/googletest/CMakeFiles/gtest_main.dir/depend
+	$(MAKE) -f gtests\googletest\CMakeFiles\gtest_main.dir\build.make gtests/googletest/CMakeFiles/gtest_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target gtest_main"
+.PHONY : gtests/googletest/CMakeFiles/gtest_main.dir/all
+
+# Include target in all.
+all: gtests/googletest/CMakeFiles/gtest_main.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+gtests/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug\CMakeFiles 4
+	$(MAKE) -f CMakeFiles\Makefile2 gtests/googletest/CMakeFiles/gtest_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\OOP\cpp_18210-18211_tasks\LaboratoryWorks\Lab_TritSet\cmake-build-debug\CMakeFiles 0
+.PHONY : gtests/googletest/CMakeFiles/gtest_main.dir/rule
+
+# Convenience name for target.
+gtest_main: gtests/googletest/CMakeFiles/gtest_main.dir/rule
+
+.PHONY : gtest_main
+
+# clean rule for target.
+gtests/googletest/CMakeFiles/gtest_main.dir/clean:
+	$(MAKE) -f gtests\googletest\CMakeFiles\gtest_main.dir\build.make gtests/googletest/CMakeFiles/gtest_main.dir/clean
+.PHONY : gtests/googletest/CMakeFiles/gtest_main.dir/clean
+
+# clean rule for target.
+clean: gtests/googletest/CMakeFiles/gtest_main.dir/clean
 
 .PHONY : clean
 
