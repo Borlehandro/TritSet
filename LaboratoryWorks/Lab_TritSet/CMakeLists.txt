@@ -12,6 +12,7 @@ include_directories(${GTEST_SOURCE_DIR}/include ${GTEST_SOURCE_DIR})
 
 file(GLOB SOURCES "src/*.h" "src/*.cpp")
 file(GLOB TEST_SOURCES "tests/*.cpp")
+
 add_executable(runAllTests tests.cpp ${TEST_SOURCES} ${SOURCES})
 add_executable(Lab_TritSet main.cpp ${SOURCES})
 

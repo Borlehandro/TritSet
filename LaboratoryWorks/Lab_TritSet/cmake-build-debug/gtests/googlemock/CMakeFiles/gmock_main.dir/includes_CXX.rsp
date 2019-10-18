@@ -1,0 +1,1 @@
+-isystem C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/gtests/googlemock/include -isystem C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/gtests/googlemock -isystem C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/gtests/googletest/include -isystem C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/gtests/googletest 
