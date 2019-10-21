@@ -177,3 +177,8 @@ TEST(OtherFunctionsTests, LenTest) {
 
     EXPECT_EQ(set.length(),3);
 }
+
+TEST(HashFunctionTests, TritHashTest) {
+    TritSet::TritHash hash;
+    EXPECT_TRUE(hash(Trit::True) != hash(Trit::False) && hash(Trit::False) != hash(Trit::Unknown) && hash(Trit::True) != hash(Trit::Unknown));
+}

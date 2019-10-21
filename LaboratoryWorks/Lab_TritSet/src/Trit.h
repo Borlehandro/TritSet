@@ -11,6 +11,4 @@ Trit operator&(Trit a, Trit b);
 Trit operator|(Trit a, Trit b);
 Trit operator~(Trit a);
 
-//TODO MAKE MORE FUNCTIONS
-
 #endif //TERNARYNUMERALSYSTEM_TRIT_H

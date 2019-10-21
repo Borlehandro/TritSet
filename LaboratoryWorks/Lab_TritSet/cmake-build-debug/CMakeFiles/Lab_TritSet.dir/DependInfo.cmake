@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/main.cpp" "C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/Lab_TritSet.dir/main.cpp.obj"
-  "C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/src/Trit.cpp" "C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/Lab_TritSet.dir/src/Trit.cpp.obj"
-  "C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/src/TritSet.cpp" "C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/Lab_TritSet.dir/src/TritSet.cpp.obj"
+  "/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/main.cpp" "/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/Lab_TritSet.dir/main.cpp.o"
+  "/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/src/Trit.cpp" "/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/Lab_TritSet.dir/src/Trit.cpp.o"
+  "/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/src/TritSet.cpp" "/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/Lab_TritSet.dir/src/TritSet.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

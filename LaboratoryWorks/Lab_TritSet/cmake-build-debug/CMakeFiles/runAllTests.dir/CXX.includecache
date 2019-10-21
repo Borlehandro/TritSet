@@ -300,17 +300,9 @@ cxxabi.h
 acxx_demangle.h
 -
 
-C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/src/Trit.h
+/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/src/Trit.h
 
-C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/src/TritSet.cpp
-iostream
--
-cmath
--
-TritSet.h
-C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/src/TritSet.h
-
-C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/src/TritSet.h
+/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/src/TritSet.h
 cstdlib
 -
 functional
@@ -318,11 +310,11 @@ functional
 unordered_map
 -
 Trit.h
-C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/src/Trit.h
+/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/src/Trit.h
 
-C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/tests/tritSetTests.cpp
+/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/tests/tritSetTests.cpp
 gtest/gtest.h
-C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/tests/gtest/gtest.h
+/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/tests/gtest/gtest.h
 ../src/TritSet.h
-C:/OOP/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/src/TritSet.h
+/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/src/TritSet.h
 

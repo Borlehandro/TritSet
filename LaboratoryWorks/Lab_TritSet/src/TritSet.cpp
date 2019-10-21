@@ -13,7 +13,7 @@ TritSet::Proxy::operator Trit() const {
 }
 
 TritSet::TritSet(size_t size) {
-    this->set = (unsigned int *) calloc(size/ 16, sizeof(unsigned int));
+    this->set = (unsigned int *) calloc(size / 16, sizeof(unsigned int));
     this->lastTritIndex = -1;
     this->lastNotUnknownTritIndex = -1;
     this->falseCount = 0;
@@ -37,7 +37,7 @@ void TritSet::fixSizes(TritSet &a, TritSet &b) {
 void TritSet::resize(size_t newSize) {
 
     this->set = (unsigned int *) realloc(set,
-                                         (newSize/16) * sizeof(unsigned int));
+                                         (newSize / 16) * sizeof(unsigned int));
     this->size = newSize;
 }
 
@@ -89,7 +89,7 @@ TritSet::Proxy::Proxy(size_t index, TritSet *tritSet) {
     this->proxyIndex = index;
     this->value = index > tritSet->capacity() ?
                   Trit::Unknown : Trit(
-                    (tritSet->set[index/16] >> ((sizeof(unsigned int) * 4 - (index % 16 + 1)) * 2)) & 3u);
+                    (tritSet->set[index / 16] >> ((sizeof(unsigned int) * 4 - (index % 16 + 1)) * 2)) & 3u);
     this->setPtr = tritSet;
 }
 
@@ -100,8 +100,8 @@ TritSet::Proxy &TritSet::Proxy::operator=(Trit newValue) {
 
     if (this->proxyIndex <= this->setPtr->capacity() || newValue != Trit::Unknown) {
 
-        this->setPtr->set[proxyIndex/16] =
-                (this->setPtr->set[proxyIndex/16] &
+        this->setPtr->set[proxyIndex / 16] =
+                (this->setPtr->set[proxyIndex / 16] &
                  (~(3u << (sizeof(unsigned int) * 4 - (proxyIndex % 16 + 1)) * 2)))
                 | ((unsigned int) newValue << (sizeof(unsigned int) * 4 - (proxyIndex % 16 + 1)) * 2);
     }
@@ -120,7 +120,7 @@ TritSet::Proxy &TritSet::Proxy::operator=(Trit newValue) {
 }
 
 void TritSet::shrink() {
-    this->set = (unsigned int *) realloc(this->set, (this->lastTritIndex/16) * sizeof(unsigned int));
+    this->set = (unsigned int *) realloc(this->set, (this->lastTritIndex / 16) * sizeof(unsigned int));
     this->size = this->lastTritIndex;
 }
 
@@ -136,26 +136,31 @@ size_t TritSet::cardinality(Trit value) {
     return -1;
 }
 
-std::unordered_map<Trit, int> TritSet::cardinality() {
-    // TODO USE std::hash<int> AND RETURN NEW...
-    std::unordered_map<Trit, int> resultMap = {
-            {Trit::False,   this->falseCount},
-            {Trit::True,    this->trueCount},
-            {Trit::Unknown, this->cardinality(Trit::Unknown)}};
+std::size_t TritSet::TritHash::operator()(Trit t) const { return std::hash<int>()((int)t); };
 
+std::unordered_map < Trit, int, TritSet::TritHash> TritSet::cardinality() {
+
+    std::unordered_map < Trit, int, TritHash> resultMap = {
+            {Trit::False, this->falseCount},
+            {Trit::True,                    this->trueCount},
+            {Trit::Unknown,                 this->cardinality(Trit::Unknown)}};
+
+    /*std::unordered_map < Trit, int, std::hash<int> > resultMap{};
+    resultMap.insert(std::unordered_map < Trit, int, std::hash<int> > :: value_type(Trit::False, this->falseCount));*/
     return resultMap;
 }
 
 void TritSet::trim(size_t lastIndex) {
 
-    this->set[lastIndex/16] = (this->set[lastIndex/16])
-            & (((unsigned int)pow(2, (lastIndex*2))-1) << (sizeof(unsigned int)*8-lastIndex*2));
+    this->set[lastIndex / 16] = (this->set[lastIndex / 16])
+                                & (((unsigned int) pow(2, (lastIndex * 2)) - 1)
+            << (sizeof(unsigned int) * 8 - lastIndex * 2));
 
-    for (unsigned int i = lastIndex/16 + 1; i < this->size-1/16; ++i) {
+    for (unsigned int i = lastIndex / 16 + 1; i < this->size - 1 / 16; ++i) {
         this->set[i] = 0;
     }
 }
 
 size_t TritSet::length() {
-    return lastNotUnknownTritIndex+1;
+    return lastNotUnknownTritIndex + 1;
 }

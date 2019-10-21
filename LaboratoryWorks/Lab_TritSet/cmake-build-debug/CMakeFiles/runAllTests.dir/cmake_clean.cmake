@@ -1,12 +1,10 @@
 file(REMOVE_RECURSE
-  "../bin/runAllTests.exe"
-  "../bin/runAllTests.exe.manifest"
+  "../bin/runAllTests"
   "../bin/runAllTests.pdb"
-  "CMakeFiles/runAllTests.dir/src/Trit.cpp.obj"
-  "CMakeFiles/runAllTests.dir/src/TritSet.cpp.obj"
-  "CMakeFiles/runAllTests.dir/tests.cpp.obj"
-  "CMakeFiles/runAllTests.dir/tests/tritSetTests.cpp.obj"
-  "librunAllTests.dll.a"
+  "CMakeFiles/runAllTests.dir/src/Trit.cpp.o"
+  "CMakeFiles/runAllTests.dir/src/TritSet.cpp.o"
+  "CMakeFiles/runAllTests.dir/tests.cpp.o"
+  "CMakeFiles/runAllTests.dir/tests/tritSetTests.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

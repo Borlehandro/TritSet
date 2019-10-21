@@ -13,7 +13,7 @@
 class TritSet {
 
 public:
-    // TODO CHANGE ALL INDEXES TYPES TO size_t
+
     class Proxy {
 
         public:
@@ -49,8 +49,14 @@ public:
     size_t cardinality(Trit value);
 
     /// аналогично но сразу для всех типов тритов
-    // TODO USE std::hash<int>
-    std::unordered_map<Trit, int> cardinality();
+    /// IT'S PUBLIC ONLY FOR TESTS
+
+    /// Hash для тритов
+    struct TritHash {
+        std::size_t operator()(Trit t) const;
+    };
+
+    std::unordered_map < Trit, int, TritSet::TritHash> cardinality();
 
     /// забыть содержимое от lastIndex и дальше
     void trim(size_t lastIndex);
