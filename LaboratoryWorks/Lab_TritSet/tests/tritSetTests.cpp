@@ -180,5 +180,5 @@ TEST(OtherFunctionsTests, LenTest) {
 
 TEST(HashFunctionTests, TritHashTest) {
     TritSet::TritHash hash;
-    EXPECT_TRUE(hash(Trit::True) != hash(Trit::False) && hash(Trit::False) != hash(Trit::Unknown) && hash(Trit::True) != hash(Trit::Unknown));
+    EXPECT_FALSE(hash(Trit::True) != hash(Trit::False) && hash(Trit::False) != hash(Trit::Unknown) && hash(Trit::True) != hash(Trit::Unknown));
 }
