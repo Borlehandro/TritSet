@@ -332,33 +332,6 @@ src/TritSet.cpp.s:
 	$(MAKE) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/src/TritSet.cpp.s
 .PHONY : src/TritSet.cpp.s
 
-tests.o: tests.cpp.o
-
-.PHONY : tests.o
-
-# target to build an object file
-tests.cpp.o:
-	$(MAKE) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/tests.cpp.o
-.PHONY : tests.cpp.o
-
-tests.i: tests.cpp.i
-
-.PHONY : tests.i
-
-# target to preprocess a source file
-tests.cpp.i:
-	$(MAKE) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/tests.cpp.i
-.PHONY : tests.cpp.i
-
-tests.s: tests.cpp.s
-
-.PHONY : tests.s
-
-# target to generate assembly for a file
-tests.cpp.s:
-	$(MAKE) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/tests.cpp.s
-.PHONY : tests.cpp.s
-
 tests/tritSetTests.o: tests/tritSetTests.cpp.o
 
 .PHONY : tests/tritSetTests.o
@@ -414,9 +387,6 @@ help:
 	@echo "... src/TritSet.o"
 	@echo "... src/TritSet.i"
 	@echo "... src/TritSet.s"
-	@echo "... tests.o"
-	@echo "... tests.i"
-	@echo "... tests.s"
 	@echo "... tests/tritSetTests.o"
 	@echo "... tests/tritSetTests.i"
 	@echo "... tests/tritSetTests.s"
