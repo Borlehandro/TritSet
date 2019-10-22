@@ -136,7 +136,7 @@ size_t TritSet::cardinality(Trit value) {
     return -1;
 }
 
-std::size_t TritSet::TritHash::operator()(Trit t) const { return std::hash<int>()((int)t); };
+std::size_t TritSet::TritHash::operator()(Trit t) const { return std::hash<int>()((int)t); }
 
 std::unordered_map < Trit, int, TritSet::TritHash> TritSet::cardinality() {
 
@@ -145,8 +145,6 @@ std::unordered_map < Trit, int, TritSet::TritHash> TritSet::cardinality() {
             {Trit::True,                    this->trueCount},
             {Trit::Unknown,                 this->cardinality(Trit::Unknown)}};
 
-    /*std::unordered_map < Trit, int, std::hash<int> > resultMap{};
-    resultMap.insert(std::unordered_map < Trit, int, std::hash<int> > :: value_type(Trit::False, this->falseCount));*/
     return resultMap;
 }
 
