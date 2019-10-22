@@ -26,7 +26,7 @@ pipelines:
           - cmake ..
           # Build the project.
           - make
-          - cd .
+          - cd ..
           - cd bin
           - ./runAllTests
           #- make test
