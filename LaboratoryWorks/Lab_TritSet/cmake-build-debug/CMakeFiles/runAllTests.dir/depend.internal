@@ -9,6 +9,26 @@ CMakeFiles/runAllTests.dir/src/TritSet.cpp.o
  /home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/src/TritSet.cpp
  /home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/src/TritSet.h
 CMakeFiles/runAllTests.dir/tests.cpp.o
+ ../gtests/googletest/include/gtest/gtest-death-test.h
+ ../gtests/googletest/include/gtest/gtest-matchers.h
+ ../gtests/googletest/include/gtest/gtest-message.h
+ ../gtests/googletest/include/gtest/gtest-param-test.h
+ ../gtests/googletest/include/gtest/gtest-printers.h
+ ../gtests/googletest/include/gtest/gtest-test-part.h
+ ../gtests/googletest/include/gtest/gtest-typed-test.h
+ ../gtests/googletest/include/gtest/gtest.h
+ ../gtests/googletest/include/gtest/gtest_pred_impl.h
+ ../gtests/googletest/include/gtest/gtest_prod.h
+ ../gtests/googletest/include/gtest/internal/custom/gtest-port.h
+ ../gtests/googletest/include/gtest/internal/custom/gtest-printers.h
+ ../gtests/googletest/include/gtest/internal/gtest-death-test-internal.h
+ ../gtests/googletest/include/gtest/internal/gtest-filepath.h
+ ../gtests/googletest/include/gtest/internal/gtest-internal.h
+ ../gtests/googletest/include/gtest/internal/gtest-param-util.h
+ ../gtests/googletest/include/gtest/internal/gtest-port-arch.h
+ ../gtests/googletest/include/gtest/internal/gtest-port.h
+ ../gtests/googletest/include/gtest/internal/gtest-string.h
+ ../gtests/googletest/include/gtest/internal/gtest-type-util.h
  /home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/tests.cpp
 CMakeFiles/runAllTests.dir/tests/tritSetTests.cpp.o
  ../gtests/googletest/include/gtest/gtest-death-test.h

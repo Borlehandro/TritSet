@@ -68,18 +68,6 @@ install/strip/fast: preinstall/fast
 	/home/alehandro/Programming/clion-2019.2.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/alehandro/Programming/clion-2019.2.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/alehandro/Programming/clion-2019.2.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -112,6 +100,18 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/alehandro/Programming/clion-2019.2.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/alehandro/Programming/clion-2019.2.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -166,19 +166,6 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named Lab_TritSet
-
-# Build rule for target.
-Lab_TritSet: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Lab_TritSet
-.PHONY : Lab_TritSet
-
-# fast build rule for target.
-Lab_TritSet/fast:
-	$(MAKE) -f CMakeFiles/Lab_TritSet.dir/build.make CMakeFiles/Lab_TritSet.dir/build
-.PHONY : Lab_TritSet/fast
 
 #=============================================================================
 # Target rules for targets named runAllTests
@@ -245,40 +232,12 @@ gtest/fast:
 	$(MAKE) -f gtests/googletest/CMakeFiles/gtest.dir/build.make gtests/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/Lab_TritSet.dir/build.make CMakeFiles/Lab_TritSet.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/Lab_TritSet.dir/build.make CMakeFiles/Lab_TritSet.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/Lab_TritSet.dir/build.make CMakeFiles/Lab_TritSet.dir/main.cpp.s
-.PHONY : main.cpp.s
-
 src/Trit.o: src/Trit.cpp.o
 
 .PHONY : src/Trit.o
 
 # target to build an object file
 src/Trit.cpp.o:
-	$(MAKE) -f CMakeFiles/Lab_TritSet.dir/build.make CMakeFiles/Lab_TritSet.dir/src/Trit.cpp.o
 	$(MAKE) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/src/Trit.cpp.o
 .PHONY : src/Trit.cpp.o
 
@@ -288,7 +247,6 @@ src/Trit.i: src/Trit.cpp.i
 
 # target to preprocess a source file
 src/Trit.cpp.i:
-	$(MAKE) -f CMakeFiles/Lab_TritSet.dir/build.make CMakeFiles/Lab_TritSet.dir/src/Trit.cpp.i
 	$(MAKE) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/src/Trit.cpp.i
 .PHONY : src/Trit.cpp.i
 
@@ -298,7 +256,6 @@ src/Trit.s: src/Trit.cpp.s
 
 # target to generate assembly for a file
 src/Trit.cpp.s:
-	$(MAKE) -f CMakeFiles/Lab_TritSet.dir/build.make CMakeFiles/Lab_TritSet.dir/src/Trit.cpp.s
 	$(MAKE) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/src/Trit.cpp.s
 .PHONY : src/Trit.cpp.s
 
@@ -308,7 +265,6 @@ src/TritSet.o: src/TritSet.cpp.o
 
 # target to build an object file
 src/TritSet.cpp.o:
-	$(MAKE) -f CMakeFiles/Lab_TritSet.dir/build.make CMakeFiles/Lab_TritSet.dir/src/TritSet.cpp.o
 	$(MAKE) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/src/TritSet.cpp.o
 .PHONY : src/TritSet.cpp.o
 
@@ -318,7 +274,6 @@ src/TritSet.i: src/TritSet.cpp.i
 
 # target to preprocess a source file
 src/TritSet.cpp.i:
-	$(MAKE) -f CMakeFiles/Lab_TritSet.dir/build.make CMakeFiles/Lab_TritSet.dir/src/TritSet.cpp.i
 	$(MAKE) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/src/TritSet.cpp.i
 .PHONY : src/TritSet.cpp.i
 
@@ -328,9 +283,35 @@ src/TritSet.s: src/TritSet.cpp.s
 
 # target to generate assembly for a file
 src/TritSet.cpp.s:
-	$(MAKE) -f CMakeFiles/Lab_TritSet.dir/build.make CMakeFiles/Lab_TritSet.dir/src/TritSet.cpp.s
 	$(MAKE) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/src/TritSet.cpp.s
 .PHONY : src/TritSet.cpp.s
+
+tests.o: tests.cpp.o
+
+.PHONY : tests.o
+
+# target to build an object file
+tests.cpp.o:
+	$(MAKE) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/tests.cpp.o
+.PHONY : tests.cpp.o
+
+tests.i: tests.cpp.i
+
+.PHONY : tests.i
+
+# target to preprocess a source file
+tests.cpp.i:
+	$(MAKE) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/tests.cpp.i
+.PHONY : tests.cpp.i
+
+tests.s: tests.cpp.s
+
+.PHONY : tests.s
+
+# target to generate assembly for a file
+tests.cpp.s:
+	$(MAKE) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/tests.cpp.s
+.PHONY : tests.cpp.s
 
 tests/tritSetTests.o: tests/tritSetTests.cpp.o
 
@@ -366,27 +347,26 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... install"
-	@echo "... Lab_TritSet"
 	@echo "... install/local"
 	@echo "... test"
-	@echo "... runAllTests"
 	@echo "... list_install_components"
+	@echo "... runAllTests"
+	@echo "... install"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... gmock_main"
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 	@echo "... src/Trit.o"
 	@echo "... src/Trit.i"
 	@echo "... src/Trit.s"
 	@echo "... src/TritSet.o"
 	@echo "... src/TritSet.i"
 	@echo "... src/TritSet.s"
+	@echo "... tests.o"
+	@echo "... tests.i"
+	@echo "... tests.s"
 	@echo "... tests/tritSetTests.o"
 	@echo "... tests/tritSetTests.i"
 	@echo "... tests/tritSetTests.s"

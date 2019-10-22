@@ -53,14 +53,12 @@ CMAKE_BINARY_DIR = /home/alehandro/CLionProjects/cpp_18210-18211_tasks/Laborator
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Lab_TritSet.dir/all
 all: CMakeFiles/runAllTests.dir/all
 all: gtests/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Lab_TritSet.dir/clean
 clean: CMakeFiles/runAllTests.dir/clean
 clean: gtests/clean
 
@@ -72,33 +70,6 @@ preinstall: gtests/preinstall
 .PHONY : preinstall
 
 #=============================================================================
-# Target rules for target CMakeFiles/Lab_TritSet.dir
-
-# All Build rule for target.
-CMakeFiles/Lab_TritSet.dir/all:
-	$(MAKE) -f CMakeFiles/Lab_TritSet.dir/build.make CMakeFiles/Lab_TritSet.dir/depend
-	$(MAKE) -f CMakeFiles/Lab_TritSet.dir/build.make CMakeFiles/Lab_TritSet.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target Lab_TritSet"
-.PHONY : CMakeFiles/Lab_TritSet.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/Lab_TritSet.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Lab_TritSet.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/Lab_TritSet.dir/rule
-
-# Convenience name for target.
-Lab_TritSet: CMakeFiles/Lab_TritSet.dir/rule
-
-.PHONY : Lab_TritSet
-
-# clean rule for target.
-CMakeFiles/Lab_TritSet.dir/clean:
-	$(MAKE) -f CMakeFiles/Lab_TritSet.dir/build.make CMakeFiles/Lab_TritSet.dir/clean
-.PHONY : CMakeFiles/Lab_TritSet.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/runAllTests.dir
 
 # All Build rule for target.
@@ -106,12 +77,12 @@ CMakeFiles/runAllTests.dir/all: gtests/googletest/CMakeFiles/gtest_main.dir/all
 CMakeFiles/runAllTests.dir/all: gtests/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/depend
 	$(MAKE) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles --progress-num=13,14,15,16 "Built target runAllTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles --progress-num=9,10,11,12,13 "Built target runAllTests"
 .PHONY : CMakeFiles/runAllTests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/runAllTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/runAllTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/runAllTests.dir/rule
@@ -174,7 +145,7 @@ gtests/googlemock/CMakeFiles/gmock_main.dir/all: gtests/googlemock/CMakeFiles/gm
 gtests/googlemock/CMakeFiles/gmock_main.dir/all: gtests/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtests/googlemock/CMakeFiles/gmock_main.dir/build.make gtests/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtests/googlemock/CMakeFiles/gmock_main.dir/build.make gtests/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target gmock_main"
 .PHONY : gtests/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -201,7 +172,7 @@ gtests/googlemock/CMakeFiles/gmock_main.dir/clean:
 gtests/googlemock/CMakeFiles/gmock.dir/all: gtests/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtests/googlemock/CMakeFiles/gmock.dir/build.make gtests/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtests/googlemock/CMakeFiles/gmock.dir/build.make gtests/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target gmock"
 .PHONY : gtests/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -248,7 +219,7 @@ gtests/googletest/preinstall:
 gtests/googletest/CMakeFiles/gtest_main.dir/all: gtests/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtests/googletest/CMakeFiles/gtest_main.dir/build.make gtests/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtests/googletest/CMakeFiles/gtest_main.dir/build.make gtests/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target gtest_main"
 .PHONY : gtests/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -275,7 +246,7 @@ gtests/googletest/CMakeFiles/gtest_main.dir/clean:
 gtests/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtests/googletest/CMakeFiles/gtest.dir/build.make gtests/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtests/googletest/CMakeFiles/gtest.dir/build.make gtests/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target gtest"
 .PHONY : gtests/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.

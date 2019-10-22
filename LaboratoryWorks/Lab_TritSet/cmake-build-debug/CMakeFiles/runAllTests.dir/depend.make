@@ -8,6 +8,26 @@ CMakeFiles/runAllTests.dir/src/TritSet.cpp.o: ../src/Trit.h
 CMakeFiles/runAllTests.dir/src/TritSet.cpp.o: ../src/TritSet.cpp
 CMakeFiles/runAllTests.dir/src/TritSet.cpp.o: ../src/TritSet.h
 
+CMakeFiles/runAllTests.dir/tests.cpp.o: ../gtests/googletest/include/gtest/gtest-death-test.h
+CMakeFiles/runAllTests.dir/tests.cpp.o: ../gtests/googletest/include/gtest/gtest-matchers.h
+CMakeFiles/runAllTests.dir/tests.cpp.o: ../gtests/googletest/include/gtest/gtest-message.h
+CMakeFiles/runAllTests.dir/tests.cpp.o: ../gtests/googletest/include/gtest/gtest-param-test.h
+CMakeFiles/runAllTests.dir/tests.cpp.o: ../gtests/googletest/include/gtest/gtest-printers.h
+CMakeFiles/runAllTests.dir/tests.cpp.o: ../gtests/googletest/include/gtest/gtest-test-part.h
+CMakeFiles/runAllTests.dir/tests.cpp.o: ../gtests/googletest/include/gtest/gtest-typed-test.h
+CMakeFiles/runAllTests.dir/tests.cpp.o: ../gtests/googletest/include/gtest/gtest.h
+CMakeFiles/runAllTests.dir/tests.cpp.o: ../gtests/googletest/include/gtest/gtest_pred_impl.h
+CMakeFiles/runAllTests.dir/tests.cpp.o: ../gtests/googletest/include/gtest/gtest_prod.h
+CMakeFiles/runAllTests.dir/tests.cpp.o: ../gtests/googletest/include/gtest/internal/custom/gtest-port.h
+CMakeFiles/runAllTests.dir/tests.cpp.o: ../gtests/googletest/include/gtest/internal/custom/gtest-printers.h
+CMakeFiles/runAllTests.dir/tests.cpp.o: ../gtests/googletest/include/gtest/internal/gtest-death-test-internal.h
+CMakeFiles/runAllTests.dir/tests.cpp.o: ../gtests/googletest/include/gtest/internal/gtest-filepath.h
+CMakeFiles/runAllTests.dir/tests.cpp.o: ../gtests/googletest/include/gtest/internal/gtest-internal.h
+CMakeFiles/runAllTests.dir/tests.cpp.o: ../gtests/googletest/include/gtest/internal/gtest-param-util.h
+CMakeFiles/runAllTests.dir/tests.cpp.o: ../gtests/googletest/include/gtest/internal/gtest-port-arch.h
+CMakeFiles/runAllTests.dir/tests.cpp.o: ../gtests/googletest/include/gtest/internal/gtest-port.h
+CMakeFiles/runAllTests.dir/tests.cpp.o: ../gtests/googletest/include/gtest/internal/gtest-string.h
+CMakeFiles/runAllTests.dir/tests.cpp.o: ../gtests/googletest/include/gtest/internal/gtest-type-util.h
 CMakeFiles/runAllTests.dir/tests.cpp.o: ../tests.cpp
 
 CMakeFiles/runAllTests.dir/tests/tritSetTests.cpp.o: ../gtests/googletest/include/gtest/gtest-death-test.h

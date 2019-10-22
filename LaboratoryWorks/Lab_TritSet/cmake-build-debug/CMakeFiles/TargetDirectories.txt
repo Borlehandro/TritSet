@@ -1,10 +1,9 @@
 /home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/install/strip.dir
-/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/install.dir
-/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/Lab_TritSet.dir
 /home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/install/local.dir
 /home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/test.dir
-/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/runAllTests.dir
 /home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/runAllTests.dir
+/home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/install.dir
 /home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/alehandro/CLionProjects/cpp_18210-18211_tasks/LaboratoryWorks/Lab_TritSet/cmake-build-debug/gtests/CMakeFiles/install/strip.dir
