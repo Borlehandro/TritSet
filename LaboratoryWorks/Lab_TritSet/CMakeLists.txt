@@ -18,4 +18,4 @@ add_executable(runAllTests tests.cpp ${TEST_SOURCES} ${SOURCES})
 add_executable(Lab_TritSet main.cpp ${SOURCES})
 
 target_link_libraries(runAllTests gtest gtest_main)
-add_test(AllTests runAllTests)
+add_test(NAME runAllTests COMMAND runAllTests)
