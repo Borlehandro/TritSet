@@ -74,6 +74,7 @@ private:
     unsigned int falseCount;
 
     static void fixSizes(TritSet &a, TritSet &b);
+    void changeCountVars(Trit newValue, unsigned int index);
     void resize(size_t newSize);
 
 };

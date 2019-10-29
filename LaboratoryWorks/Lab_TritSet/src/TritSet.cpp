@@ -41,6 +41,18 @@ void TritSet::resize(size_t newSize) {
     this->size = newSize;
 }
 
+void TritSet::changeCountVars(Trit newValue, unsigned int index) {
+    this->lastTritIndex = index;
+
+    if (newValue != Trit::Unknown)
+        this->lastNotUnknownTritIndex = index;
+
+    if (newValue == Trit::False)
+        this->falseCount += 1;
+    else if (newValue == Trit::True)
+        this->trueCount += 1;
+}
+
 TritSet::Proxy TritSet::operator[](size_t index) {
     return {index, this};
 }
@@ -56,6 +68,7 @@ TritSet TritSet::operator&(TritSet setA) {
         Trit b = setA[i];
 
         resSet[i] = a & b;
+        resSet.changeCountVars(a|b, i);
     }
     return resSet;
 }
@@ -70,6 +83,7 @@ TritSet TritSet::operator|(TritSet setA) {
         Trit a = (*this)[i];
         Trit b = setA[i];
         resSet[i] = a | b;
+        resSet.changeCountVars(a|b, i);
     }
     return resSet;
 }
@@ -80,6 +94,7 @@ TritSet TritSet::operator~() {
     for (unsigned int i = 0; i < this->size; ++i) {
         Trit a = (*this)[i];
         resSet[i] = ~a;
+        resSet.changeCountVars(~a, i);
     }
 
     return resSet;
@@ -106,18 +121,12 @@ TritSet::Proxy &TritSet::Proxy::operator=(Trit newValue) {
                 | ((unsigned int) newValue << (sizeof(unsigned int) * 4 - (proxyIndex % 16 + 1)) * 2);
     }
 
-    this->setPtr->lastTritIndex = this->proxyIndex;
-
-    if (newValue != Trit::Unknown)
-        this->setPtr->lastNotUnknownTritIndex = this->proxyIndex;
-
-    if (newValue == Trit::False)
-        this->setPtr->falseCount += 1;
-    else if (newValue == Trit::True)
-        this->setPtr->trueCount += 1;
-
+    this->setPtr->changeCountVars(newValue, proxyIndex);
+    
     return *this;
 }
+
+
 
 void TritSet::shrink() {
     this->set = (unsigned int *) realloc(this->set, (this->lastTritIndex / 16) * sizeof(unsigned int));
